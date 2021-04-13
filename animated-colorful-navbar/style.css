@@ -6,9 +6,11 @@
 .nav-container{
     height: 100vh;
     background-color: #ffb457;
+    justify-content: center;
+}
+.nav-container, .bar, .menu{
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .bar-wrapper{
     position: relative;
@@ -17,8 +19,6 @@
     background-color: red;
 }
 .bar{
-    display: flex;
-    align-items: center;
     justify-content: space-around;
     height: inherit;
     width: inherit;
@@ -41,14 +41,10 @@
     margin-left: 10px;
     transition: margin-left 1.5s ease-in-out;
 }
-
-
 .menu{
     width: 60px;
     height: 60px;
-    display: flex;
     justify-content: center;
-    align-items: center;
     position: relative;
     background-color: transparent;
     border-radius: 50%;
@@ -79,10 +75,4 @@
     z-index: -1;
     transition: width 1.5s ease-in-out, height 1.5s ease-in-out;
     border-radius: 50%;
-}
-
-@keyframes animateMe {
-    0%{
-        margin-left: 10px;
-    }
 }
