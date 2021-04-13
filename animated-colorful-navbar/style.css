@@ -55,12 +55,13 @@
 
 .menu{
     width: 60px;
-    height: 0px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     /* pointer-events: none; */
-    background-color: green;
+    background-color: transparent;
     border-radius: 50%;
     margin-top: 0;
     transition: width 1.5s ease-in-out, height 1.5s ease-in-out, margin-top 1.5s ease-in-out;
@@ -69,12 +70,32 @@
     pointer-events: none;
 }
 .menu-1{
-    background-color: #ff8c00;
+    /* background-color: #ff8c00; */
     width: 60px;
     height: 60px;
     margin-top: -27px;
 }
-
+.menu-1 .halo{
+    background-color: #ff8c00;
+    width: 60px;
+    height: 60px;
+}
+.halo{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: width 1.5s ease-in-out, height 1.5s ease-in-out;
+    border-radius: 50%;
+}
+/* svg:hover + .halo{
+    width: 60px;
+    height: 60px;
+} */
 @keyframes animateMe {
     0%{
         margin-left: 10px;
