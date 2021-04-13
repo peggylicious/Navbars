@@ -5,7 +5,6 @@
 }
 .nav-container{
     height: 100vh;
-    /* background-color: rgb(236, 134, 211); */
     background-color: #ffb457;
     display: flex;
     align-items: center;
@@ -16,8 +15,6 @@
     width: 700px;
     height: 60px;
     background-color: red;
-    /* padding-top: 20px;
-    padding-bottom: 20px; */
 }
 .bar{
     display: flex;
@@ -25,8 +22,6 @@
     justify-content: space-around;
     height: inherit;
     width: inherit;
-    /* padding-top: inherit;
-    padding-bottom: inherit; */
     background-color: #1d1d27;
     position: absolute;
     top: 0;
@@ -38,7 +33,6 @@
     width: 120px;
     height: 85px;
     background-color: #1d1d27;
-    /* border-radius: 100%; */
     border-top-right-radius: 170px;
     border-top-left-radius: 170px;
     z-index: 1;
@@ -47,11 +41,7 @@
     margin-left: 10px;
     transition: margin-left 1.5s ease-in-out;
 }
-.animated-on{
-    /* animation-name: animateMe;
-    animation-duration: 2s; */
-    /* transition: margin-left .356s; */
-}
+
 
 .menu{
     width: 60px;
@@ -60,7 +50,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    /* pointer-events: none; */
     background-color: transparent;
     border-radius: 50%;
     margin-top: 0;
@@ -70,7 +59,6 @@
     pointer-events: none;
 }
 .menu-1{
-    /* background-color: #ff8c00; */
     width: 60px;
     height: 60px;
     margin-top: -27px;
@@ -92,10 +80,7 @@
     transition: width 1.5s ease-in-out, height 1.5s ease-in-out;
     border-radius: 50%;
 }
-/* svg:hover + .halo{
-    width: 60px;
-    height: 60px;
-} */
+
 @keyframes animateMe {
     0%{
         margin-left: 10px;

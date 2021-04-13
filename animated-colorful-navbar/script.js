@@ -12,7 +12,8 @@ document.addEventListener("click", (event) => {
     let shapeParent = event.target.parentElement;
 
     if (event.target.matches(".menu svg")) {
-      if (parseInt(event.target.parentElement.title) === i) {
+      // if (parseInt(event.target.parentElement.title) === i) {
+      if (event.target === shapes[i]) {
         highlighter.style.marginLeft = `${shapeParent.offsetLeft - 30}px`;
         halo[i].style.width = "60px";
         halo[i].style.height = "60px";
@@ -25,8 +26,6 @@ document.addEventListener("click", (event) => {
         menu[i].style.marginTop = "0px";
         halo[i].style.backgroundColor = "transparent";
       }
-      console.log(event.target.parentElement.title);
     }
-    console.log(shapeParent.offsetLeft);
   }
 });
